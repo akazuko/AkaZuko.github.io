@@ -18,7 +18,8 @@
 
     var options = [
     {selector: '#second_col1_head', offset: 50, callback: 'Materialize.showStaggeredList("#second_col1_head");'},
-    {selector: '#face-icon', offset: 50, callback: 'Materialize.showStaggeredList("#face-icon");' }
+    {selector: '#face-icon', offset: 50, callback: 'Materialize.showStaggeredList("#face-icon");' },
+    {selector: '#education-bar', offset: 50, callback: 'Materialize.showStaggeredList("#education-bar");' }
   		];
 	Materialize.scrollFire(options);
   
