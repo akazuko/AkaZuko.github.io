@@ -24,67 +24,74 @@
                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li class="tooltipped" data-position="bottom" data-delay="10" data-tooltip="Me">
-                        <a href="#" class="waves-effect"><i class="fa fa-user"></i></a>
+                        <a href="#user" class="waves-effect scroll"><i class="fa fa-user"></i></a>
                     </li>
                     <li class="tooltipped" data-position="bottom" data-delay="10" data-tooltip="Education">
-                        <a href="#" class="waves-effect"><i class="fa fa-university"></i></a>
+                        <a href="#education" class="waves-effect scroll"><i class="fa fa-university"></i></a>
                     </li>
                     <li class="tooltipped" data-position="bottom" data-delay="10" data-tooltip="Work">
-                        <a href="#" class="waves-effect"><i class="fa fa-briefcase"></i></a>
+                        <a href="#work" class="waves-effect scroll"><i class="fa fa-briefcase"></i></a>
                     </li>
                     <li class="tooltipped" data-position="bottom" data-delay="10" data-tooltip="Projects">
-                        <a href="#" class="waves-effect"><i class="fa fa-code"></i></a>
+                        <a href="#projects" class="waves-effect scroll"><i class="fa fa-code"></i></a>
                     </li>
                     <li class="tooltipped" data-position="bottom" data-delay="10" data-tooltip="RESUMÉ">
-                        <a href="#" class="waves-effect"><i class="fa fa-file-pdf-o"></i></a>
+                        <a href="#resume" class="waves-effect modal-trigger"><i class="fa fa-file-pdf-o"></i></a>
                     </li>
                 </ul>
 
                 <ul id="nav-mobile" class="right side-nav">
-                    <li><a href="#" class="waves-effect">ABOUT</a></li>
-                    <li><a href="#" class="waves-effect">EDUCATION</a></li>
-                    <li><a href="#" class="waves-effect">WORK</a></li>
-                    <li><a href="#" class="waves-effect">PROJECTS</a></li>
-                    <li><a href="#" class="waves-effect">RESUMÉ</a></li>
+                    <li><a href="#user" class="waves-effect scroll">ABOUT</a></li>
+                    <li><a href="#education" class="waves-effect scroll">EDUCATION</a></li>
+                    <li><a href="#work" class="waves-effect scroll">WORK</a></li>
+                    <li><a href="#projects" class="waves-effect scroll">PROJECTS</a></li>
+                    <li><a href="#resume" class="waves-effect modal-trigger">RESUMÉ</a></li>
                 </ul>
             </div>
         </nav>
     </div>
+
+    <div id="resume" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+    
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
-                <!-- The top navigation bar -->                
-                
+            <div class="container">
+                <p  style="margin-top:5rem"></p>
         
-
-        <div class="container">
-            <p  style="margin-top:5rem"></p>
-        
-            <div class="center">
-                <img href="#" class="circle responsive-img" src="images/Profile/profilepic180*180.png">
-            </div>
+                <div class="center">
+                    <img href="#" class="circle responsive-img" src="images/Profile/profilepic180*180.png">
+                </div>
             
-            <br>
+                <br>
             
-            <div class="divider" style="width: 50%; margin: auto; margin-top:7rem"></div>
+                <div class="divider" style="width: 50%; margin: auto; margin-top:7rem"></div>
                 <h3 class="center text-white text-lighten-2"><p style="font-size: 80%;" >Hi! I'm Ayush Sharma.</p></h3>
                 <div class="divider" style="width: 50%; margin: auto"></div>
                 <h5 class="header center col s11 light " >An enthusiastic developer.</h5>
                 <h4 class="center">
-                    <a href="https://www.facebook.com/a.sharma95" style="color: white" target="_blank">
-                        <i class="fa fa-facebook"></i>&nbsp&nbsp
-                    </a>
-                    <a href="https://github.com/AkaZuko" style="color: white" target="_blank">
-                        <i class="fa fa-github"></i>&nbsp&nbsp
-                    </a>
-                    <a href="https://twitter.com/ayush_sharma_95" style="color: white" target="_blank">
-                        <i class="fa fa-twitter"></i>&nbsp&nbsp
-                    </a>
-                    <a href="https://www.linkedin.com/profile" style="color: white" target="_blank">
-                        <i class="fa fa-linkedin"></i>&nbsp&nbsp
-                    </a>
-                    <a href="mailto:sharma.ayush1995@gmail.com" style="color: white" target="_blank">
-                        <i class="fa fa-envelope-o"></i>
-                    </a>
+                        <a href="https://www.facebook.com/a.sharma95" style="color: white" target="_blank">
+                            <i class="fa fa-facebook"></i>&nbsp&nbsp
+                        </a>
+                        <a href="https://github.com/AkaZuko" style="color: white" target="_blank">
+                            <i class="fa fa-github"></i>&nbsp&nbsp
+                        </a>
+                        <a href="https://twitter.com/ayush_sharma_95" style="color: white" target="_blank">
+                            <i class="fa fa-twitter"></i>&nbsp&nbsp
+                        </a>
+                        <a href="https://www.linkedin.com/profile" style="color: white" target="_blank">
+                            <i class="fa fa-linkedin"></i>&nbsp&nbsp
+                        </a>
+                        <a href="mailto:sharma.ayush1995@gmail.com" style="color: white" target="_blank">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
                 </h4>
             </div>
         </div>
@@ -92,16 +99,20 @@
         <div class="parallax"><img src="images/lone.jpg" alt="Unsplashed background img 2"></div>
     </div>
 
+    <a name="user"></a>
     <div class="container">
         <div class="row">
         <ul id="face-icon" class="center">
             <!-- <li style="opacity:0;"><i class="material-icons large">face</i></li> -->
+            <br><br>
             <li style="opacity:0;"><i class="fa fa-user large"></i></li>
             <li style="opacity:0;">
                 <p style="font-family: 'Jura'; font-size:130%">
+                <br>
                 I am currently studying in third year at <a>BITS Pilani University</a>.
                 <br>
                 I am working as an intern at <a href="http://www.hbcse.tifr.res.in/">Homi Bhabha Centre for Science Education</a>.
+                <br><br>
                 </p>
             </li>
         </ul>
@@ -119,8 +130,7 @@
     </div>
 
     
-
-
+    <a name="education"></a>
     <div class="container">
         <div class="section">
             <ul id="education-bar">
@@ -163,7 +173,7 @@
                                 <p class="center"><b>B.E.(Hons.) Computer Science</b></p>
                                 <p class="light">
                                     I am currently in third year. Learning about computer science and developing a temprament towards logical thinking, building strong friendships and exploring many avenues.<br>
-                                    <b>CGPA: 9.601/10</b>.
+                                    <b>CGPA: 9.603/10</b>.
                                 </p>
                             </div>
                         </div>
@@ -182,9 +192,196 @@
                 </div>
             </div>
         </div>
+        <div class="parallax"><img src="images/work2.png" alt="Unsplashed background img 2"></div>
+    </div>
+
+    <a name="work"></a>
+    <div class="container">
+        <div class="section">
+            <ul id="work-bar">
+                <li class="center" style="opacity:0;"><i class="fa fa-briefcase large"></i><br><br><br><br></li>
+                <li style="opacity:0">
+                    <div class="row">
+                        <div class="col s12 m4">
+                            <div class="icon-block">
+                                <div class="center"><img class="responsive-img" src="images/Work/tifr1.png" ></div>
+                                <h5  class="center"><br>TIFR | Mumbai</h5>
+                                <p class="center "><b>Homi Bhabha Centre for Science Education, TIFR</b></p>
+                                <p class="center" style="margin-top:1rem">22 May'15 - 17 July'15</p>
+                                <p class="light" >
+                                    I worked here as summer intern and developed an application to be run on django-server. The application works as a simple mailclient for HBCSE's project MetaStudio and using the idea of mailing list
+                                    helps in sycing the school servers acroos India. We worked on GNU's NDF(Node Description Framework) : gnowsys.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                            <div class="icon-block">
+                                <div class="center"><img src="images/Education/BITS1.png" class="circle responsive-img"></div>
+                                <h5 class="center"><br>BITS Pilani | Goa</h5>
+                                <p class="center"><b>Professional Assistant</b></p>
+                                <p class="center"><br>Sophomore year, II Semester</p>
+                                <p class="light">
+                                    I helped teach CS F111 - Computer Programming, a course for freshmen. My job was to conduct the weekly lab sessions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                            <div class="icon-block">
+                        <!-- <h2 class="center brown-text"><i class="mdi-action-settings"></i></h2> -->
+                                <div class="center"><img src="images/Work/quark1.png" class="circle responsive-img"></div>
+                                <h5 class="center"><br>Quark | Tech. Fest</h5>
+                                <p class="center"><b>Project Mentor</b></p>
+                                <p class="center"><br>25 May'15 - Present</p>
+                                <p class="light">
+                                    I mentored juniors in developing a Computer Vision project: A free hand drawing tool. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                <!-- <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5> -->
+                </div>
+            </div>
+        </div>
         <div class="parallax"><img src="images/comment.jpg" alt="Unsplashed background img 2"></div>
     </div>
 
+    <a name="projects"></a>
+    <div class="container">
+        <div class="section">
+            <ul id="projects-bar">
+                <li class="center" style="opacity:0;"><i class="fa fa-code large"></i><br><br><br><br></li>
+                <li style="opacity:0">
+                    <div class="row">
+                        <!-- <div class="col z-depth-1" style="margin-left:1rem; width:23%; height: 40rem;"> -->
+                        <div class="col s12 m3">
+                            <div class="icon-block  z-depth-1">
+                                <div class="center" style="padding-top: 5px">
+                                    <img src="images/Project/music.png" class="circle responsive-img">
+                                </div>
+                                <h5  class="center">MusicOnLAN</h5>
+                                <!-- <p class="center"><b>Bal Mandir Sr. Sec. School</b></p> -->
+                                <p class="light center" >
+                                    An cross platform application to play music in sync across several computers.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="col z-depth-1" style="margin-left:1rem; width:23%; height: 40rem;"> -->
+                        <div class="col s12 m3">
+                            <div class="icon-block  z-depth-1">
+                                <div class="center" style="padding-top: 5px">
+                                    <img src="images/Project/vlc.png" class="circle responsive-img">
+                                </div>
+                                <h5 class="center">VLC Controller</h5>
+                                <p class="light center">
+                                    An application to control basic VLC playback features through hand gestures.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col z-depth-1" style="margin-left:1rem; width:23%; height: 40rem;"> -->
+                        <div class="col s12 m3">
+                            <div class="icon-block  z-depth-1">
+                        <!-- <h2 class="center brown-text"><i class="mdi-action-settings"></i></h2> -->
+                                <div class="center" style="padding-top: 5px">
+                                    <img src="images/Project/email.png" class="circle responsive-img">
+                                </div>
+                                <h5 class="center">MailClient</h5>
+                                <p class="light center">
+                                    An application to fetch mails from E-Mail accounts and store them in 'maildir' format locally.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col z-depth-1 grey lighten-3" style="margin-left:1rem; width:23%; height: 40rem;"> -->
+                        <div class="col s12 m3">
+                            <div class="icon-block z-depth-1">
+                        <!-- <h2 class="center brown-text"><i class="mdi-action-settings"></i></h2> -->
+                                <div class="center" style="padding-top:5px">
+                                    <img src="images/Project/sync.png" class="circle responsive-img">
+                                </div>
+                                <h5 class="center">Server Sync</h5>
+                                <!-- <p class="center"><b>B.E.(Hons.) Computer Science</b></p> -->
+                                <p class="light center">
+                                    An application to capture any activity on MetaStudio and sync other servers with the same.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m3">
+                            <div class="icon-block z-depth-1">
+                        <!-- <h2 class="center brown-text"><i class="mdi-action-settings"></i></h2> -->
+                                <div class="center" style="padding-top: 5px">
+                                    <img src="images/Education/BITS1.png" class="circle responsive-img">
+                                </div>
+                                <h5 class="center">Spree</h5>
+                                <!-- <p class="center"><b>B.E.(Hons.) Computer Science</b></p> -->
+                                <p class="light center">
+                                    A desktop application to manage and notify about events in college's Sports Fest : Spree.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="icon-block z-depth-1">
+                        <!-- <h2 class="center brown-text"><i class="mdi-action-settings"></i></h2> -->
+                                <div class="center" style="padding-top: 5px">
+                                    <img src="images/Education/BITS1.png" class="circle responsive-img">
+                                </div>
+                                <h5 class="center">Voting Machine</h5>
+                                <!-- <p class="center"><b>B.E.(Hons.) Computer Science</b></p> -->
+                                <p class="light center">
+                                    An 8086 processor based electronic voting machine with an authentication system.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="icon-block z-depth-1">
+                        <!-- <h2 class="center brown-text"><i class="mdi-action-settings"></i></h2> -->
+                                <div class="center" style="padding-top: 5px">
+                                    <img src="images/Education/BITS1.png" class="circle responsive-img">
+                                </div>
+                                <h5 class="center">Handsfree Paint</h5>
+                                <!-- <p class="center"><b>B.E.(Hons.) Computer Science</b></p> -->
+                                <p class="light center">
+                                    A totally handsfree paint tool to select and paint colors on the screen (under development).
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <div class="icon-block z-depth-1">
+                        <!-- <h2 class="center brown-text"><i class="mdi-action-settings"></i></h2> -->
+                                <div class="center" style="padding-top: 5px">
+                                    <img src="images/Education/BITS1.png" class="circle responsive-img">
+                                </div>
+                                <h5 class="center">HamCode G&C</h5>
+                                <!-- <p class="center"><b>B.E.(Hons.) Computer Science</b></p> -->
+                                <p class="light center">
+                                A device to generate and check hamming code in serial-bit-transmission and alert on wrong reception.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- <div class="container">
         <div class="section">
             <div class="row">
@@ -210,16 +407,17 @@
     <div class="parallax"><img src="images/ayush.jpg" alt="Unsplashed background img 3"></div>
   </div> -->
 
-  <footer class="page-footer teal">
-    <div class="container">
-      <!-- <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+    <footer class="page-footer white">
+        <div class="container">
+            <div class="row">
+        <!-- <div class="col l6 s12"> -->
+                <div class="col">
+                    <p class="black-text" align="center">Developed By : You guessed right! Me.</p>
+          <!-- <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p> -->
 
 
-        </div>
-        <div class="col l3 s12">
+                </div>
+        <!-- <div class="col l3 s12">
           <h5 class="white-text">Settings</h5>
           <ul>
             <li><a class="white-text" href="#!">Link 1</a></li>
@@ -227,8 +425,8 @@
             <li><a class="white-text" href="#!">Link 3</a></li>
             <li><a class="white-text" href="#!">Link 4</a></li>
           </ul>
-        </div>
-        <div class="col l3 s12">
+        </div> -->
+        <!-- <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
             <li><a class="white-text" href="#!">Link 1</a></li>
@@ -236,23 +434,25 @@
             <li><a class="white-text" href="#!">Link 3</a></li>
             <li><a class="white-text" href="#!">Link 4</a></li>
           </ul>
-        </div> 
-      </div>-->
-    </div>
+        </div> --> 
+            </div>
+        </div>
     <!-- <div class="footer-copyright">
       <div class="container">
       Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
     </div> -->
-  </footer>
+
+    </footer>
 
 
   <!--  Scripts
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   -->
-  <script src="js/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
 
-  </body>
+</body>
+
 </html>

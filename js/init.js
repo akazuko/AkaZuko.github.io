@@ -1,6 +1,9 @@
 (function($){
   $(function(){
 
+  	// for resume modal-appearance
+  	$('.modal-trigger').leanModal();
+
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
 
@@ -19,10 +22,22 @@
     var options = [
     {selector: '#second_col1_head', offset: 50, callback: 'Materialize.showStaggeredList("#second_col1_head");'},
     {selector: '#face-icon', offset: 50, callback: 'Materialize.showStaggeredList("#face-icon");' },
-    {selector: '#education-bar', offset: 50, callback: 'Materialize.showStaggeredList("#education-bar");' }
+    {selector: '#education-bar', offset: 50, callback: 'Materialize.showStaggeredList("#education-bar");' },
+    {selector: '#projects-bar', offset: 50, callback: 'Materialize.showStaggeredList("#projects-bar");' },
+    {selector: '#work-bar', offset: 50, callback: 'Materialize.showStaggeredList("#work-bar");' }
   		];
 	Materialize.scrollFire(options);
   
+  	// For smooth-scrolling
+  	var $root = $('html, body'); // For optimization
+  	$('.scroll').click(function(){
+    	$root.animate({
+        	scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+    	}, 500);
+    	return false;
+	});
+
+
   }); // end of document ready
 
 })(jQuery); // end of jQuery name space
