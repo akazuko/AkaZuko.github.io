@@ -53,3 +53,20 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.Josephin{
+  font-family: 'Josefin Slab', serif;
+}
+
+.Jura{
+  font-family: 'Jura';
+}
+
+@font-face {
+font-family: stRyde;
+src: url("../font/StRyde-Regular.otf") format("opentype");
+}
+
+.stRyde{
+  font-family: 'stRyde'; 
+}
