@@ -24,7 +24,8 @@
     {selector: '#face-icon', offset: 50, callback: 'Materialize.showStaggeredList("#face-icon");' },
     {selector: '#education-bar', offset: 50, callback: 'Materialize.showStaggeredList("#education-bar");' },
     {selector: '#projects-bar', offset: 50, callback: 'Materialize.showStaggeredList("#projects-bar");' },
-    {selector: '#work-bar', offset: 50, callback: 'Materialize.showStaggeredList("#work-bar");' }
+    {selector: '#work-bar', offset: 50, callback: 'Materialize.showStaggeredList("#work-bar");' },
+    {selector: '#skill-bar', offset: 50, callback: 'Materialize.showStaggeredList("#skill-bar");' }
   		];
 	Materialize.scrollFire(options);
   
