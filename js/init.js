@@ -11,31 +11,51 @@ $(document).ready(function(){
     $('.tooltipped').tooltip();
   });
   
-  $("#education").append(parse(educationData));
-  $("#work").append(parse(workData));
-  $("#projects").append(parse(projectsData));
+  $("#education").append(prepareTimeline(educationData));
+  $("#work").append(prepareTimeline(workData));
+  $("#projects").append(plotProjects(projectsData));
 });
 
-function parse(data){
+function plotProjects(data) {
   var retVal = '';
+
+  for(idx in data) {
+    var entry = data[idx];
+    var content = '';
+
+    var cardTitle = '<span class="card-title Jura"><a>' + entry.header + '</a></span>';
+
+    var cardContent = '<p class="Jura">' + entry.content + '</p>';
+    cardContent = '<div class="card-content">' + cardTitle + cardContent + '</div>';
+
+    var classes = 'waves-effect waves-light btn brown lighten-3 white-text';
+    if (!entry.github) {
+      classes += ' disabled';
+    }
+    var cardAction = '<a class="' + classes + '" href="'+ entry.github + '" target="_blank">code</a>';
+    cardAction = '<div class="card-action">' + cardAction + '</div>';
+
+    content = '<div class="card">' + cardContent + cardAction + '</div>';
+    content = '<div class="col s12 m6 l6 xl6">' + content + '</div>';
+
+    retVal += content;
+  }
+
+  retVal = '<div class="row">' + retVal + '</div>';
+  console.log(retVal);
+  return retVal;
+}
+
+function prepareTimeline(data){
+  var retVal = '';
+  var timeline__img = '<div class="cd-timeline__img cd-timeline__img--plain js-cd-img"></div>';
   
   for(idx in data){
     var entry = data[idx];
-    var header = '';
-    var body = '';
-    var headerData = '';
-    var bodyData = '';
+    var content = '';
 
-    headerData += '<h4>';
-    if(entry.year){
-      headerData += entry.year + ' - ';
-    }
-    headerData += '<a>' + entry.header + '</a>';
-    headerData += '</h4>';
-
-    header += '<div class="collapsible-header Jura">' + headerData + '</div>';
-    
-    bodyData += '<p>' + entry.content + '</p>';
+    content += '<h2><a>' + entry.header + '</h2></a>';
+    content += '<p>' + entry.content + '</p>';
 
     if(entry.achievements){
       var achievementData = '<ul class="collection with-header">';
@@ -44,19 +64,20 @@ function parse(data){
         achievementData += '<li class="collection-item">' + entry.achievements[achievementIdx] + '</li>';
       }
       achievementData += '</ul>';
-      bodyData += achievementData;
+      content += achievementData;
     }
-    body += '<div class="collapsible-body Jura">' + bodyData + '</div>';
+
+    var year = entry.year || idx;
+    content += '<span class="cd-timeline__date">' + year + '</span>';
+    content = '<div class="cd-timeline__content js-cd-content Jura">' + content + '</div>';
+    content = timeline__img + content;
     
-    if(idx == 0){
-      retVal += '<li class="active">' + header + body + '</li>';  
-    }
-    else{
-      retVal += '<li>' + header + body + '</li>';  
-    }
+    retVal += '<div class="cd-timeline__block js-cd-block">' + content + '</div>';
   }
 
-  retVal = '<ul class="collapsible popout">' + retVal + '</ul>'; 
+  retVal = '<div class="cd-timeline__container">' + retVal + '</div>';
+  retVal = '<section class="cd-timeline js-cd-timeline">' + retVal + '</section>';
+
   return retVal;
 }
 
