@@ -8,8 +8,8 @@ var projectsData = [{
   "header": "MuSync",
   "content": "A cross platform application to play music in sync across several computers."
 },{
-  "github": null,
-  "header": "https://github.com/AkaZuko/Gesture_Recognition",
+  "github": "https://github.com/AkaZuko/Gesture_Recognition",
+  "header": "Gesture Recognition",
   "content": "An application to control basic VLC playback features through hand gestures."
 },{
   "github": "https://github.com/AkaZuko/gstudio",
