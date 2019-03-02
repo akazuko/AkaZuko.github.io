@@ -56,3 +56,7 @@
  .tabs .tab a:focus, .tabs .tab a:focus.active {
    background-color: #ffff;
  }
+
+ .customBrown {
+  background-color:#795548;
+ }

@@ -2,6 +2,7 @@ $(document).ready(function(){
   includeHTML();
 
   $('.tabs').tabs();
+  $('.modal').modal();
   
   $(document).ready(function(){
     $('.collapsible').collapsible();
