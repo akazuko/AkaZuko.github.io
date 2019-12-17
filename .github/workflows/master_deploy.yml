@@ -7,6 +7,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
 
+    - name: Build
+      run: |
+        npm install
+        npm run-script build
+
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.0.5
       with:
