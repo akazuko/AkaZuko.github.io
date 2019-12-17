@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     paths:
-      - 'src/**'
+      - 'portfolio/**'
       - '.github/**'
 
 jobs:
@@ -14,11 +14,10 @@ jobs:
 
     - name: Build
       run: |
-        cd src
+        cd portfolio
         npm install
         npm run-script build
-        npm run-script export
-        touch out/.nojekyll
+        touch build/.nojekyll
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.0.5
@@ -26,4 +25,4 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BASE_BRANCH: master # The branch the action should deploy from.
         BRANCH: master # The branch the action should deploy to.
-        FOLDER: src/out # The folder the action should deploy.
+        FOLDER: portfolio/build # The folder the action should deploy.
