@@ -1,8 +1,9 @@
 name: Build and Deploy
 on:
   push:
-    branches:
-      - master
+    paths:
+      - 'src/**'
+      - '.github/**'
 
 jobs:
   build-and-deploy:
@@ -17,7 +18,7 @@ jobs:
         npm install
         npm run-script build
         npm run-script export
-
+        touch out/.nojekyll
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.0.5
