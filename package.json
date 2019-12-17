@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "antd": "^3.25.3",
+    "babel-plugin-import": "^1.13.0",
+    "next": "9.1.4",
+    "null-loader": "latest",
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
+  }
+}
