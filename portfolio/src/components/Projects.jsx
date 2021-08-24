@@ -30,14 +30,15 @@ class Projects extends React.Component {
                     dataSource={projects}
                     bordered={true}
                     header={<h1>Projects</h1>}
+                    style={{width: '100%'}}
                     renderItem={item => (
                     <List.Item actions={[<a key="list-loadmore-edit" href={item.url}>code</a>]}>
-                        <Skeleton avatar title={false} loading={item.loading} active>
+                        {/* <Skeleton avatar title={false} loading={item.loading} active> */}
                         <List.Item.Meta
                             title={item.name}
                             description={item.description}
                         />
-                        </Skeleton>
+                        {/* </Skeleton> */}
                     </List.Item>
                     )}
                 />

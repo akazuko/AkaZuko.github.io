@@ -1,5 +1,16 @@
 import React from 'react';
-import { Menu, Row, Col, Icon, Typography, Affix } from 'antd';
+import { Menu, Row, Col, Typography, Affix } from 'antd';
+import {
+    GithubOutlined,
+    LinkedinOutlined,
+    TwitterOutlined,
+    MailOutlined,
+    HomeOutlined,
+    BookOutlined,
+    LaptopOutlined,
+    CodeOutlined,
+    ReadOutlined
+} from '@ant-design/icons';
 
 const { Title } = Typography;
 
@@ -28,22 +39,22 @@ class NavBar extends React.Component {
                                 <Row type="flex" justify="center">
                                     <Col span={4} style={{padding: 10}}>
                                         <a href="https://github.com/AkaZuko" target="blank">
-                                            <Icon type="github" style={{fontSize: 'x-large'}}/>
+                                            <GithubOutlined style={{fontSize: 'x-large'}}/>
                                         </a>
                                     </Col>
                                     <Col span={4} style={{padding: 10}}>
                                         <a href="https://www.linkedin.com/in/akazuko" target="blank">
-                                            <Icon type="linkedin" style={{fontSize: 'x-large'}}/>
+                                            <LinkedinOutlined style={{fontSize: 'x-large'}}/>
                                         </a>
                                     </Col>
                                     <Col span={4} style={{padding: 10}}>
                                         <a href="https://twitter.com/localmrbean" target="blank">
-                                            <Icon type="twitter" style={{fontSize: 'x-large'}}/>
+                                            <TwitterOutlined style={{fontSize: 'x-large'}}/>
                                         </a>
                                     </Col>
                                     <Col span={4} style={{padding: 10}}>
                                         <a href="mailto:localbean.public@gmail.com" target="blank">
-                                            <Icon type="mail" style={{fontSize: 'x-large'}}/>
+                                            <MailOutlined style={{fontSize: 'x-large'}}/>
                                         </a>
                                     </Col>
                                 </Row>
@@ -58,7 +69,7 @@ class NavBar extends React.Component {
                             <Menu.Item key="1">
                                 <a onClick={(e) => {this.props.updateCurrentContent("home")}}>
                                     <div>
-                                        <Icon type="home" />
+                                        <HomeOutlined />
                                         <span>Home</span>
                                     </div>
                                 </a>
@@ -66,7 +77,7 @@ class NavBar extends React.Component {
                             <Menu.Item key="2">
                                 <a onClick={(e) => {this.props.updateCurrentContent("education")}}>
                                     <div>
-                                        <Icon type="book" />
+                                        <BookOutlined/>
                                         <span>Education</span>
                                     </div>
                                 </a>
@@ -75,7 +86,7 @@ class NavBar extends React.Component {
                             <Menu.Item key="3">
                                 <a onClick={(e) => {this.props.updateCurrentContent("work")}}>
                                     <div>
-                                        <Icon type="laptop" />
+                                        <LaptopOutlined/>
                                         <span>Work</span>
                                     </div>
                                 </a>
@@ -83,7 +94,7 @@ class NavBar extends React.Component {
                             <Menu.Item key="4">
                                 <a onClick={(e) => {this.props.updateCurrentContent("projects")}}>
                                     <div>
-                                        <Icon type="code" />
+                                        <CodeOutlined/>
                                         <span>Projects</span>
                                     </div>
                                 </a>
@@ -91,7 +102,7 @@ class NavBar extends React.Component {
                             <Menu.Item key="5">
                                 <a onClick={(e) => {this.props.updateCurrentContent("blog")}}>
                                     <div>
-                                        <Icon type="read" />
+                                        <ReadOutlined/>
                                         <span>Blog</span>
                                     </div>
                                 </a>
@@ -102,27 +113,27 @@ class NavBar extends React.Component {
                         <Row type="flex" justify="center" style={{borderBottom: 'solid'}}>
                             <Col span={4} style={{padding: 10}}>
                                 <a onClick={(e) => {this.props.updateCurrentContent("home")}}>
-                                    <Icon type="home" style={{fontSize: 'x-large'}}/>
+                                    <HomeOutlined style={{fontSize: 'x-large'}}/>
                                 </a>
                             </Col>
                             <Col span={4} style={{padding: 10}}>
                                 <a onClick={(e) => {this.props.updateCurrentContent("education")}}>
-                                    <Icon type="book" style={{fontSize: 'x-large'}}/>
+                                    <BookOutlined style={{fontSize: 'x-large'}}/>
                                 </a>
                             </Col>
                             <Col span={4} style={{padding: 10}}>
                                 <a onClick={(e) => {this.props.updateCurrentContent("work")}}>
-                                    <Icon type="laptop" style={{fontSize: 'x-large'}}/>
+                                    <LaptopOutlined style={{fontSize: 'x-large'}}/>
                                 </a>
                             </Col>
                             <Col span={4} style={{padding: 10}}>
                                 <a onClick={(e) => {this.props.updateCurrentContent("projects")}}>
-                                    <Icon type="code" style={{fontSize: 'x-large'}}/>
+                                    <CodeOutlined style={{fontSize: 'x-large'}}/>
                                 </a>
                             </Col>
                             <Col span={4} style={{padding: 10}}>
                                 <a onClick={(e) => {this.props.updateCurrentContent("blog")}}>
-                                    <Icon type="read" style={{fontSize: 'x-large'}}/>
+                                    <ReadOutlined style={{fontSize: 'x-large'}}/>
                                 </a>
                             </Col>
                         </Row>

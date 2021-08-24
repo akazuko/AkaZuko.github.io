@@ -25,10 +25,10 @@ class Home extends React.Component {
                 </Col>
                 <Divider />
             </Row>
-            <Row>
-                    <p style={{fontFamily: 'Josefin Slab', fontSize: '130%'}}>
+            <Row type="flex" justify="center" gutter={10}>
+                <Col style={{fontFamily: 'Josefin Slab', fontSize: '130%'}}>
                         <b>Areas of interest:</b>
-                    </p>
+                </Col>
                     {areasOfInterests.map((x) => <Tag>{x}</Tag>)}
             </Row>
             <Divider/>

@@ -23,6 +23,7 @@ class Blog extends React.Component {
                 dataSource={blogs}
                 bordered={true}
                 header={<h1>Articles</h1>}
+                style={{width: '100%'}}
                 renderItem={item => (
                 <List.Item actions={[<a key="list-loadmore-edit" href={item.url}>view</a>]}>
                     <Skeleton avatar title={false} loading={item.loading} active>
