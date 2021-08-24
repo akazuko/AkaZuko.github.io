@@ -3,17 +3,21 @@ import { List, Avatar, Button, Skeleton, Row } from 'antd';
 
 const projects = [
     {
+      name: 'Coffee machine',
+      description: 'A project to simulate coffee machine to learn golang.',
+      url: 'https://github.com/akazuko/coffee-machine'
+    },{
       name: 'Sign Language Detector',
       description: 'A machine learning solution that generated subtitles automatically for sign language in the input video.',
-      url: 'https://github.com/AkaZuko/sign-language-detector'
+      url: 'https://github.com/akazuko/sign-language-detector'
     },{
       name: 'Portfolio Templater',
       description: 'This is github.io portfolio template to enable users to quickly add their portfolio.',
-      url: 'https://github.com/AkaZuko/portfolio_template'
+      url: 'https://github.com/akazuko/portfolio_template'
     },{
       name: 'Time Table Scheduler',
       description: 'Scheduling a time table using Genetic Algorithm.',
-      url: 'https://github.com/AkaZuko/timetable_scheduler'
+      url: 'https://github.com/akazuko/timetable_scheduler'
     }
   ];
 

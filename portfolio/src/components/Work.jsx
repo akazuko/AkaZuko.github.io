@@ -6,11 +6,19 @@ class Work extends React.Component {
         return (
             <Timeline mode="left">
             <Timeline.Item key="1" color="green">
-                <Card title={<span><a href="#">2017 - Present</a> - Nutanix</span>}>
+                <Card title={<span><a href="#">2020 - Present</a> - Microsoft</span>}>
                 <p>
-                In January 2017 I started my journey here as an intern for 6 months. I joined back as MTS in Aug'17. I have been working on Xi Developer Cloud Services.
+                I have been working on Azure Storage solutions.
+                </p>
+                </Card>
+            </Timeline.Item>
+            <Timeline.Item key="1" color="green">
+                <Card title={<span><a href="#">2017 - 2020</a> - Nutanix</span>}>
+                <p>
+                In January 2017 I started my journey here as an intern for 6 months. I joined back as MTS in Aug'17. I worked on Xi Developer Cloud Services.
                 </p>
                 <List header={<h1>Achievements</h1>}>
+                    <List.Item>Hackathon project to product with display in .NEXT conference 2018</List.Item>
                     <List.Item>MTS3 title assignment in the span of only 1 year</List.Item>
                 </List>
                 </Card>

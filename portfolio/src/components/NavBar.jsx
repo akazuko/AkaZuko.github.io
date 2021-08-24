@@ -37,12 +37,12 @@ class NavBar extends React.Component {
                                         </a>
                                     </Col>
                                     <Col span={4} style={{padding: 10}}>
-                                        <a href="https://twitter.com/asharma_95" target="blank">
+                                        <a href="https://twitter.com/localmrbean" target="blank">
                                             <Icon type="twitter" style={{fontSize: 'x-large'}}/>
                                         </a>
                                     </Col>
                                     <Col span={4} style={{padding: 10}}>
-                                        <a href="mailto:sharma.ayush1995@gmail.com" target="blank">
+                                        <a href="mailto:localbean.public@gmail.com" target="blank">
                                             <Icon type="mail" style={{fontSize: 'x-large'}}/>
                                         </a>
                                     </Col>
